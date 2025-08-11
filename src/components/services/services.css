@@ -1,0 +1,112 @@
+.services__container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+
+.card .card-i {
+  z-index: 2;
+  position: relative;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  background: var(--color-bg-variant); /* Dark background */
+  color: var(--color-white);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 30rem;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 12px 20px var(--color-bg-variant);
+  border-color: var(--color-primary); /* Gold border on hover */
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary); /* Gold text */
+}
+
+.card h4 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h4 span {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+  font-size: .9rem;
+}
+
+.card .btn {
+  background: var(--color-primary); /* Gold button */
+  color: var(--color-bg-variant); /* Dark text */
+  border: none;
+  transition: var(--transition);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card .btn:hover {
+  background: var(--color-primary); /* Slightly darker gold */
+  transform: scale(1.2);
+  color: var(--color-bg-variant);
+}
+
+.recommended {
+  background: #222; /* Slightly lighter background for emphasis */
+  transform: translateY(-20px);
+  border: 2px solid var(--color-primary); /* Gold border for recommended plan */
+}
+
+@media screen and (max-width: 1024px) {
+    .services__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        place-items: center;
+    }
+
+    .card {
+        width: 22rem;
+        transform: translate(0) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #services {
+        margin-bottom: 30rem; /* Reduce margin to give space for the portfolio */
+    }
+
+    .card {
+        width: 100%; /* Ensure cards fit within the screen width */
+    }
+}

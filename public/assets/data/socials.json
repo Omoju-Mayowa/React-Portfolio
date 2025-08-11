@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "MdAttachEmail",
+    "title": "Email",
+    "desc": "omojumayowa@gmail.com",
+    "linkAddress": "mailto: omojumayowa@gmail.com",
+    "linkTarget": "_blank",
+    "linkTitle": "Email Us!"
+  },
+  {
+    "icon": "BiLogoWhatsapp",
+    "title": "Whatsapp",
+    "desc": "+234 901 953 6994",
+    "linkAddress": "mailto: omojumayowa@gmail.com",
+    "linkTarget": "_blank",
+    "linkTitle": "Whatsapp Me!"
+  },
+  {
+    "icon": "RiTwitterXLine",
+    "title": "X (Twitter)",
+    "desc": "@Oluwamayow88713",
+    "linkAddress": "https://x.com/Oluwamayow88713",
+    "linkTarget": "_blank",
+    "linkTitle": "Let's Discuss With X"
+  }
+]
